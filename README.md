@@ -2,5 +2,7 @@
 
 ## Usage
 
+```
 brew tap e-invoice-be/tap
 brew install peppol
+```
