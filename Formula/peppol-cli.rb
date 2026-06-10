@@ -5,21 +5,21 @@
 class PeppolCli < Formula
   desc "CLI for the e-invoice.be Peppol Access Point API"
   homepage "https://github.com/e-invoice-be/peppol-cli"
-  version "0.0.4"
+  version "0.0.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/e-invoice-be/peppol-cli/releases/download/v0.0.4/peppol-cli_0.0.4_darwin_amd64.tar.gz"
-      sha256 "1132bea99703a0cd8af7f4391fe093de76395027b45675fbfdbc7a3dcfff0d03"
+      url "https://github.com/e-invoice-be/peppol-cli/releases/download/v0.0.5/peppol-cli_0.0.5_darwin_amd64.tar.gz"
+      sha256 "eeb201cef40790036d3234135d97a8a3cfa95e215e975a676c72c424601600a0"
 
       define_method(:install) do
         bin.install "peppol"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/e-invoice-be/peppol-cli/releases/download/v0.0.4/peppol-cli_0.0.4_darwin_arm64.tar.gz"
-      sha256 "58459985302bf0338c10860b02a6949f14c564c46b428ae93d7ec50ed96405ca"
+      url "https://github.com/e-invoice-be/peppol-cli/releases/download/v0.0.5/peppol-cli_0.0.5_darwin_arm64.tar.gz"
+      sha256 "11766abb035e0ec6f1b2a3c79a3b09245f924d3e33d05eb9ab02cfebbb6fd75a"
 
       define_method(:install) do
         bin.install "peppol"
@@ -29,15 +29,15 @@ class PeppolCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/e-invoice-be/peppol-cli/releases/download/v0.0.4/peppol-cli_0.0.4_linux_amd64.tar.gz"
-      sha256 "03edfe7b703395e65d9f37e4b0676efeca06a4e10ca5459f4092eddc26a99a85"
+      url "https://github.com/e-invoice-be/peppol-cli/releases/download/v0.0.5/peppol-cli_0.0.5_linux_amd64.tar.gz"
+      sha256 "a2c330fddcd721971db07f3711f1f5be6fc72a3d815f5ecfd9bb86a7db225cc2"
       define_method(:install) do
         bin.install "peppol"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/e-invoice-be/peppol-cli/releases/download/v0.0.4/peppol-cli_0.0.4_linux_arm64.tar.gz"
-      sha256 "e0967e782913503c8dfa8ced3e440dbff59e19efdf556f7390c65a812d1af9f9"
+      url "https://github.com/e-invoice-be/peppol-cli/releases/download/v0.0.5/peppol-cli_0.0.5_linux_arm64.tar.gz"
+      sha256 "a381a2eb30e35728693046aadf45b1ede66ed04059d3ac01efd0682e789274e5"
       define_method(:install) do
         bin.install "peppol"
       end
